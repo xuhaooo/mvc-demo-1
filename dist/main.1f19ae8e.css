@@ -19,9 +19,9 @@ body > .page {
 body > .page > section{
     height: 50vh;
     width: 50vw;
+    border: 1px solid gray;
 }
 #app1{
-    border: 1px solid red;
     width: 50vw;
     height: 50vh;
 }
@@ -32,7 +32,6 @@ body > .page > section{
 
 }
 #app2 {
-    border: 1px solid blue;
     width: 50vw;
     height: 50vh;
 }
@@ -52,6 +51,45 @@ body > .page > section{
 }
 #app2 .tab-content li.active {
     display: block;
+}
+#app3 {
+
+}
+#app3 .square {
+    border: 1px solid purple;
+    background: purple;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    width: 10vw;
+    height: 10vw;
+    transition: transform 1s linear;
+}
+#app3 .square.active {
+    transform: translateX(25vw);
+    border-radius: 50%;
+}
+
+#app4 {
+
+}
+@keyframes change {
+    0% {
+        background: pink;
+    }
+    100% {
+        background: hotpink;
+    }
+}
+#app4 .circle {
+    border: 1px solid pink;
+    margin-top: 2vw;
+    margin-left: 15vw;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+#app4 .circle.active {
+    animation: change 1s infinite alternate linear;
 }
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */

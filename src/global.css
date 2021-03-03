@@ -8,4 +8,5 @@ body > .page {
 body > .page > section{
     height: 50vh;
     width: 50vw;
+    border: 1px solid gray;
 }
